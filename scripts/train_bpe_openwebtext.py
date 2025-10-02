@@ -2,7 +2,7 @@ from pathlib import Path
 from tests.adapters import run_train_bpe
 
 def main():
-    input_path = str(Path('data') / 'TinyStoriesV2-GPT4-valid.txt')
+    input_path = str(Path('data') / 'owt_valid.txt')
     vocab_size = 10000
     special_tokens = ['<|endoftext|>']
 
@@ -19,7 +19,7 @@ def main():
     # Save vocab and merges to a text file under results folder
     results_dir = Path('results')
     results_dir.mkdir(exist_ok=True)
-    output_file = results_dir / 'bpe_vocab_merges.txt'
+    output_file = results_dir / 'bpe_vocab_merges_opentext.txt'
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('Vocab:\n')
         for k, v in vocab.items():
