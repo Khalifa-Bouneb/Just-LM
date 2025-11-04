@@ -1,50 +1,67 @@
-# CS336 Spring 2025 Assignment 1: Basics
+# Just-LM: Language Modeling from Scratch 🧠🚀
 
-For a full description of the assignment, see the assignment handout at
-[cs336_spring2025_assignment1_basics.pdf](./cs336_spring2025_assignment1_basics.pdf)
+## 📋 Introduction
 
-If you see any issues with the assignment handout or code, please feel free to
-raise a GitHub issue or open a pull request with a fix.
+Welcome to **Just-LM**, a personal deep dive into **Language Modeling (LM)**.
+This repository documents my journey through **Stanford CS336: Language Modeling**, focusing on building models and ideas **from scratch** using **PyTorch**.
 
-## Setup
+The goal is to reproduce key techniques from influential papers and lectures, gaining both **theoretical understanding** and **hands-on experience** with large language models — from simple RNNs to modern Transformers.
 
-### Environment
-We manage our environments with `uv` to ensure reproducibility, portability, and ease of use.
-Install `uv` [here](https://github.com/astral-sh/uv) (recommended), or run `pip install uv`/`brew install uv`.
-We recommend reading a bit about managing projects in `uv` [here](https://docs.astral.sh/uv/guides/projects/#managing-dependencies) (you will not regret it!).
+---
 
-You can now run any code in the repo using
-```sh
-uv run <python_file_path>
-```
-and the environment will be automatically solved and activated when necessary.
+## 🎯 Progress
 
-### Run unit tests
+**CS336: Language Modeling (Stanford)** — A structured exploration of language modeling fundamentals, covering:
 
+* Tokenization & text preprocessing
+* Transformer architectures & attention
+* Scaling laws, pre-training, and fine-tuning
+* Filtering Language Modeling Data
+* Alignement and Reasoning RL
 
-```sh
-uv run pytest
-```
+### 🧑‍🏫 Lectures
 
-Initially, all tests should fail with `NotImplementedError`s.
-To connect your implementation to the tests, complete the
-functions in [./tests/adapters.py](./tests/adapters.py).
+Progress tracker:
+🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4 / 24 lectures completed)
 
-### Download data
-Download the TinyStories data and a subsample of OpenWebText
+---
 
-``` sh
-mkdir -p data
-cd data
+## 🧩 Implementations
 
-wget https://huggingface.co/datasets/roneneldan/TinyStories/resolve/main/TinyStoriesV2-GPT4-train.txt
-wget https://huggingface.co/datasets/roneneldan/TinyStories/resolve/main/TinyStoriesV2-GPT4-valid.txt
+* **Assignment 1:** Building a Transformer LM (completed)
+* **Assignment 2:** Systems and Parallelism (up next)
+* **Assignment 3:** Scaling laws
+* **Assignment 4:** Filtering Language Modeling Data
+* **Assignment 5:** Alignement and Reasoning RL
 
-wget https://huggingface.co/datasets/stanford-cs336/owt-sample/resolve/main/owt_train.txt.gz
-gunzip owt_train.txt.gz
-wget https://huggingface.co/datasets/stanford-cs336/owt-sample/resolve/main/owt_valid.txt.gz
-gunzip owt_valid.txt.gz
+---
 
-cd ..
-```
+## 🚀 Beyond CS336: Advanced Language Modeling
 
+Once the course foundation is solid, the plan is to go **beyond the curriculum**, including:
+
+* Implementing Transformer variants (GPT, BERT, RoPE, etc.)
+* Exploring efficient training (FlashAttention, LoRA, Quantization)
+* Training a small GPT-style model from scratch
+* Experimenting with dataset curation, evaluation, and alignment
+
+---
+
+## 🧠 Technologies
+
+* **Framework:** PyTorch
+* **Environment:** Python 3.10+ / Jupyter Notebooks
+* **Tools:** NumPy, Matplotlib, tqdm, tokenizers
+
+---
+
+## 📘 Acknowledgments
+
+Course materials and inspiration from:
+
+* [CS336: Language Modeling (Stanford)](https://web.stanford.edu/class/cs336/)
+* Foundational LLM papers (GPT, Attention is All You Need, BERT, etc.)
+
+---
+
+*“Learning by building — one model at a time.”*
