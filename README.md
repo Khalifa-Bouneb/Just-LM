@@ -28,7 +28,7 @@ Progress tracker:
 
 ## 🧩 Implementations
 
-* [þ] **Assignment 1:** Building a Transformer LM (completed)
+* [&#x2611;] **Assignment 1:** Building a Transformer LM (completed)
 * [ ] **Assignment 2:** Systems and Parallelism (up next)
 * [ ] **Assignment 3:** Scaling laws
 * [ ] **Assignment 4:** Filtering Language Modeling Data
